@@ -1,0 +1,19 @@
+.list-group {
+	max-width: 400px;
+	margin: auto;
+	margin-bottom: 20px;
+}
+
+.selected {
+	background-color: lightblue;
+}
+
+.correct {
+	background-color: #4caf50c9;
+	color: #fff;
+}
+
+.incorrect {
+	background-color: red;
+	color: #fff;
+}
