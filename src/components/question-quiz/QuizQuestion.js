@@ -35,9 +35,9 @@ export default {
 			if (this.selecteAns === this.correctIndex) {
 				isCorrect = true;
 			}
-      this.answered = true;
-      
-      // PASSED THIS INCREMENT TO PARENT COMPONENT AS PROPS
+			this.answered = true;
+
+			// PASSED THIS INCREMENT TO PARENT COMPONENT AS PROPS
 			this.increment(isCorrect);
 		},
 		suffleAnswer() {
@@ -49,7 +49,6 @@ export default {
 			this.correctIndex = this.shuffledAnswers.indexOf(
 				this.currentQuestion?.correct_answer
 			);
-		
 		},
 	},
 	computed: {
@@ -66,8 +65,8 @@ export default {
 	},
 	watch: {
 		currentQuestion() {
-      this.selecteAns = null;
-      this.answered = false;
+			this.selecteAns = null;
+			this.answered = false;
 			this.suffleAnswer();
 		},
 	},

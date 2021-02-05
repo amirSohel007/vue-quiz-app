@@ -32,16 +32,15 @@ export default {
     };
   },
   mounted: async function () {
-      //START MUSIC 
-      this.playMusic();
-
+    //START MUSIC
+    this.playMusic();
 
     // Fetch Random quedtion from server
-      let response = await Axios.get(
-        "https://opentdb.com/api.php?amount=10&category=27&difficulty=easy"
-      );
-      let jsonData = await response;
-      this.questions = jsonData.data.results;
+    let response = await Axios.get(
+      "https://opentdb.com/api.php?amount=10&category=27&difficulty=easy"
+    );
+    let jsonData = await response;
+    this.questions = jsonData.data.results;
   },
   methods: {
     next() {
@@ -54,10 +53,12 @@ export default {
       }
       this.totalQuestion++;
     },
-      playMusic(){
-      let audio = new Audio('https://coderadio-relay-nyc.freecodecamp.org/radio/8010/radio.mp3')
-      audio.play()
-      }
+    playMusic() {
+      let audio = new Audio(
+        "https://coderadio-relay-nyc.freecodecamp.org/radio/8010/radio.mp3"
+      );
+      audio.play();
+    },
   },
 };
 </script>

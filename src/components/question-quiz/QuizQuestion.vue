@@ -49,5 +49,5 @@ export default quizQuestionScript;
 
 <style scoped>
 /* IMPORT CSS FILE HERE */
-@import './QuizQuestion.css';
+@import "./QuizQuestion.css";
 </style>
